@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — Paceline</title>
+<meta name="description" content="Browse running shoes, apparel and accessories by category and brand.">
+<meta name="theme-color" content="#171614">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171614'/%3E%3Cpath d='M9 24V8h8a5 5 0 010 10h-4' stroke='%23ccf24d' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="topbar"><div class="wrap">
+  <span class="topbar__l">Free India-wide delivery over ₹2,999 · 30-day returns</span>
+  <span class="topbar__mid">Autumn '26 — new arrivals dropping weekly</span>
+  <span class="topbar__r">Store: Bengaluru · EN / ₹ INR</span>
+</div></div>
+<header class="header"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Paceline home">PACELINE</a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <ul><li><a href="shop.html?cat=men">Men</a></li><li><a href="shop.html?cat=women">Women</a></li><li><a href="shop.html?cat=footwear">Footwear</a></li><li><a href="shop.html?cat=apparel">Apparel</a></li><li><a href="shop.html?cat=brands">Brands</a></li><li><a href="shop.html?cat=sale">Sale</a></li><li><a href="about.html">About</a></li></ul>
+  </nav>
+  <div class="icons">
+    <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+    <button class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+    <button class="icon-btn" aria-label="Cart, 2 items"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14l-1.5 13h-11z"/><path d="M9 7a3 3 0 016 0"/></svg><span class="badge" aria-hidden="true">2</span></button>
+    <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></header>
+
+<main id="main">
+<section class="shop-hero"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Home</a> / Shop</p>
+  <h1 id="shop-title">Shop all</h1>
+  <p id="shop-count" aria-live="polite"></p>
+</div></section>
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="filters" id="cats-bar" role="group" aria-label="Filter by category"></div>
+  <div class="filters filters--brands" id="brands" role="group" aria-label="Filter by brand"></div>
+  <ul class="products" id="grid"></ul>
+  <p class="cart-empty" id="none" hidden>No products match. <button class="rm" id="reset">Clear filters</button></p>
+</div></section>
+</main>
+<section class="news" aria-labelledby="news-h"><div class="wrap">
+  <div><h2 id="news-h">Join the Paceline club.</h2><p>Early access to new drops, race-day tips, and 10% off your first order.</p></div>
+  <form id="news-form" novalidate>
+    <label class="sr-only" for="email">Email address</label>
+    <input id="email" type="email" placeholder="your@email.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <p class="news__msg" id="news-msg" role="status" aria-live="polite"></p>
+</div></section>
+<footer class="footer"><div class="wrap">
+  <div class="footer__grid">
+    <div class="footer__brand"><a class="logo" href="index.html">PACELINE</a><p>Race-day gear, trail-tested essentials, and everyday running kit — curated in Bengaluru since 2015.</p></div>
+    <div><h3>Shop</h3><ul><li><a href="shop.html?cat=men">Men's</a></li><li><a href="shop.html?cat=women">Women's</a></li><li><a href="shop.html?cat=footwear">Footwear</a></li><li><a href="shop.html?cat=apparel">Apparel</a></li><li><a href="shop.html?cat=accessories">Accessories</a></li><li><a href="shop.html?cat=sale">Sale</a></li></ul></div><div><h3>Help</h3><ul><li><a href="#">Contact</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Size Guides</a></li><li><a href="#">Gait Analysis</a></li><li><a href="#">FAQs</a></li></ul></div><div><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="#">Store · Bengaluru</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Wholesale</a></li><li><a href="#">Press</a></li></ul></div><div><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Strava</a></li><li><a href="#">TikTok</a></li><li><a href="#">YouTube</a></li><li><a href="#">Newsletter</a></li><li><a href="#">Blog</a></li></ul></div>
+  </div>
+  <div class="footer__bar"><span>© 2026 Paceline Running Co. — All rights reserved.</span><nav aria-label="Legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Accessibility</a></nav></div>
+</div></footer>
+<script src="js/shop.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
